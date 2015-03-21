@@ -32,10 +32,8 @@ HanoiGame.prototype.isValidMove = function (startIdx, endIdx) {
 
 HanoiGame.prototype.move = function (startIdx, endIdx) {
   var that = this;
-  // console.log([that.stacks[startIdx], that.stacks[endIdx]]);
   if (that.isValidMove(startIdx, endIdx)) {
     var num = that.stacks[startIdx].pop();
-    // console.log(num);
     that.stacks[endIdx].push(num);
     return true;
   }

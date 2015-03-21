@@ -1,7 +1,5 @@
 var ttt = require("./ttt");
 
-
-
 var readline = require('readline');
 var reader = readline.createInterface({
   input: process.stdin,
@@ -12,4 +10,5 @@ var game = new ttt.Game(reader);
 
 game.run( function () {
   game.board.display();
+  reader.close();
 });

@@ -26,7 +26,7 @@ Board.prototype.isWon = function () {
           colWon = false;
         }
       }
-      
+
       if (rowWon || colWon) {
         won = true;
       }

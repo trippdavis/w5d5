@@ -24,7 +24,7 @@ Game.prototype.run = function (completionCallback) {
     }
     if (board.isWon()) {
       completionCallback();
-      game.reader.close();
+      // game.reader.close();
     } else {
       game.run(completionCallback);
     }
